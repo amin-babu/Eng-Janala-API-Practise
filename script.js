@@ -21,6 +21,7 @@ loadLesson();
 
 // fetching every lesson/button data
 const loadLevelWords = (id) => {
+  manageSpinner(true);
   const url = `https://openapi.programming-hero.com/api/level/${id}`;
   fetch(url).then(res => res.json()).then(data => {
     // call this function to remove active class from all buttons  
@@ -52,6 +53,7 @@ const displayLabelWords = (words) => {
         <h4 class="font-bangla text-center text-4xl font-bold">নেক্সট Lesson এ যান</h4>
       </div>
     `;
+    manageSpinner(false);
     return;
   }
   words.forEach(word => {
@@ -69,6 +71,8 @@ const displayLabelWords = (words) => {
       </div>
     `;
   });
+  
+  manageSpinner(false);
 }
 
 // fetching word details data
@@ -112,4 +116,17 @@ const displayWordDetails = (wordDetails) => {
 const createElement = (synonyms) => {
   const htmlElements = synonyms.map(word => `<button class="btn bg-[#EDF7FF] font-normal border-[#D7E4EF]">${word}</button>`);
   return htmlElements.join(' ');
+}
+
+// manage spinner when data is loading
+const manageSpinner = (status) => {
+  if(status){
+    document.getElementById('spinner').classList.remove('hidden');
+    document.getElementById('spinner').classList.add('flex');
+    document.getElementById('word-container').classList.add('hidden');
+  } else{
+    document.getElementById('spinner').classList.add('hidden');
+    document.getElementById('spinner').classList.remove('flex');
+    document.getElementById('word-container').classList.remove('hidden');
+  }
 }
