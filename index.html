@@ -83,9 +83,33 @@
     <h2 class="text-4xl font-bold text-center my-8"><span class="text-[#00BCFF]">let's</span> Learn Vocabularies</h2>
 
     <div id="button-container" class="flex justify-center items-center flex-wrap gap-x-5">
-      
     </div>
   </section>
+
+  <!-- Word Detail Section -->
+  <section id="word-container"
+    class="bg-[#F8F8F8] w-11/12 my-10 mx-auto p-5 grid md:grid-cols-3 grid-cols-1 gap-4 rounded-lg">
+
+    <div class="space-y-2 col-span-full py-8">
+      <a class="flex items-center justify-center gap-1 text-xl font-semibold cursor-pointer">
+        <span>English</span>
+        <img src="./assets/logo.png" alt="">
+        <span class="font-bangla">জানালা</span>
+      </a>
+      <p class="font-bangla text-center">আপনি এখনো কোন Lesson Select করেন নি</p>
+      <h4 class="font-bangla text-center text-4xl font-bold">একটি Lesson Select করুন।</h4>
+    </div>
+  </section>
+
+  <!-- Modal Card -->
+  <!-- Open the modal using ID.showModal() method -->
+  <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+  <dialog id="word_modal" class="modal">
+    <div id="word-detail-container" class="modal-box p-3 ">
+      
+    </div>
+  </dialog>
+
   <script src="./script.js"></script>
 </body>
 
