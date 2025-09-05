@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>API Practise | English Janala</title>
   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
@@ -23,7 +24,69 @@
     href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 </head>
+
 <body>
-  
+  <!-- Navber Section -->
+  <nav>
+    <div class="navbar bg-[#BADEFF26] shadow-sm px-[4.1%]">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2">
+            <a class="btn"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+            <a class="btn"><i class="fa-solid fa-book-open"></i> Learn</a>
+            <a class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+          </ul>
+        </div>
+        <a class="flex items-center gap-1 text-xl font-semibold cursor-pointer">
+          <span>English</span>
+          <img src="./assets/logo.png" alt="">
+          <span class="font-bangla">জানালা</span>
+        </a>
+      </div>
+
+      <div class="navbar-end space-x-4 hidden lg:flex">
+        <a class="btn btn-primary btn-outline"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+        <a class="btn btn-primary btn-outline"><i class="fa-solid fa-book-open"></i> Learn</a>
+        <a class="btn btn-primary btn-outline"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="banner w-11/12 mx-auto flex md:flex-row flex-col-reverse items-center gap-6">
+    <div class="contant flex-1">
+      <h2 class="text-4xl font-bold"><span class="text-[#00BCFF]">English</span> is Easy!!</h2>
+      <p class="font-bangla my-5">
+        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive
+        Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+      </p>
+      <form action="" class="space-y-3">
+        <input type="text" class="input" placeholder="Enter Your Name" /> <br>
+        <input type="password" class="input" placeholder="Password" /> <br>
+        <button class="btn btn-primary">Get Started</button>
+      </form>
+    </div>
+    <div class="flex-1">
+      <img src="./assets/hero-student.png" alt="">
+    </div>
+  </section>
+
+  <!-- Button Section -->
+  <section>
+    <h2 class="text-4xl font-bold text-center my-8"><span class="text-[#00BCFF]">let's</span> Learn Vocabularies</h2>
+
+    <div id="button-container" class="flex justify-center items-center flex-wrap gap-x-5">
+      
+    </div>
+  </section>
+  <script src="./script.js"></script>
 </body>
+
 </html>
